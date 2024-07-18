@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Dataset",
+  "$id": "schemas/dataset",
+  "description": "Metadata schema for a Dataset",
+  "type": "object",
+  "$ref": "./../schema/catalogued_resource_schema.json",
+  "properties": {
+    "accessService": {
+      "description": "A reference to the service that provided the data",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 50
+      }
+    },
+    "distribution": {
+      "description": "A collection of distributions",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "downloadURL": {
+            "description": "The location from which the Dataset can be downloaded",
+            "type": "string",
+            "maxLength": 250
+          },
+          "format": {
+            "description": "Uncontrolled terms (words or phrases) assigned to describe an information resource.",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "CSV",
+                "XML",
+                "XSLX",
+                "Geopackage"
+              ]
+            }
+          }
+        },
+        "required": [
+          "downloadURL",
+          "format"
+        ]
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}

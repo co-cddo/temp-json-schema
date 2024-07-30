@@ -32,29 +32,7 @@
         "email"
       ]
     },
-    "contentTheme": {
-      "description": "Topic: A controlled term that expresses the broad topical content of an information resource. Subject: A controlled term that expresses a topic of the intellectual content of an information resource.",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "Agriculture, fisheries and forestry",
-          "Business, economics and finance",
-          "Crime and justice",
-          "Culture, leisure and sport",
-          "Education",
-          "Energy",
-          "Environment and nature",
-          "Geography",
-          "Government and public sector",
-          "Health and care",
-          "Population and society",
-          "Science and technology",
-          "Transport and infrastructure"
-        ]
-      }
-    },
-    "dateCreated": {
+    "modified": {
       "description": "The date on which the data was created or last updated.",
       "$ref": "./../schema/shared_schema.json#/schemas/dateOrDateTime"
     },
@@ -86,23 +64,10 @@
       "type": "string",
       "maxLength": 75
     },
-    "recordID": {
+    "identifier": {
       "description": "A unique number, code, or reference value assigned to a catalogued resource within the catalogue.",
       "type": "string",
       "maxLength": 50
-    },
-    "resourceTheme": {
-      "description": "Topic: A controlled term that expresses the broad topical content of an information resource. Subject: A controlled term that expresses a topic of the intellectual content of an information resource.",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "Data Set",
-          "Data Service",
-          "Data Group",
-          "Data Share"
-        ]
-      }
     },
     "securityClassification": {
       "description": "An information security designation that identifies the minimum level of protection assigned to an information resource.",
@@ -114,15 +79,50 @@
         "NOT_APPLICABLE"
       ]
     },
-    "supplierID": {
+    "supplierIdentifier": {
       "description": "A unique number, code, or reference value assigned to a catalogued resource a third party (supplier's) system.",
       "type": "string",
       "maxLength": 50
+    },
+    "theme": {
+      "description": "Topic: A controlled term that expresses the broad topical content of an information resource. Subject: A controlled term that expresses a topic of the intellectual content of an information resource.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Agriculture, fisheries and forestry",
+          "Business, economics and finance",
+          "Crime and justice",
+          "Culture, leisure and sport",
+          "Education",
+          "Energy",
+          "Environment and nature",
+          "Geography",
+          "Government and public sector",
+          "Health and care",
+          "Population and society",
+          "Science and technology",
+          "Transport and infrastructure"
+        ]
+      }
     },
     "title": {
       "description": "The full and formal name given to an information resource. A name given to the distribution.",
       "type": "string",
       "maxLength": 200
+    },
+    "type": {
+      "description": "Topic: A controlled term that expresses the broad topical content of an information resource. Subject: A controlled term that expresses a topic of the intellectual content of an information resource.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Data Set",
+          "Data Service",
+          "Data Group",
+          "Data Share"
+        ]
+      }
     }
   },
   "unevaluatedProperties": false

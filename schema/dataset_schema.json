@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Dataset",
+  "title": "Dataset schema",
   "$id": "schemas/dataset",
   "description": "Metadata schema for a Dataset",
   "type": "object",

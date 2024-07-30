@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Catalogued Resource",
+  "title": "Catalogued Resource schema",
   "$id": "schemas/catalogued_resource",
   "description": "Metadata schema for a Catalogued Resource",
   "type": "object",

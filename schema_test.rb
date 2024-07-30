@@ -36,3 +36,13 @@ validate(
   sample: 'samples/data_service.json',
   schema: 'schema/data_service_schema.json'
 )
+
+validate(
+  sample: 'samples/data_group.json',
+  schema: 'schema/data_group_schema.json'
+)
+
+validate(
+  sample: 'samples/data_share.json',
+  schema: 'schema/data_share_schema.json'
+)

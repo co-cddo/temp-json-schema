@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Data Group schema",
+  "$id": "schemas/dataGroup",
+  "description": "Metadata schema for a Data group",
+  "type": "object",
+  "$ref": "./../schema/catalogued_resource_schema.json",
+  "properties": {
+    "cataloguedResource": {
+      "description": "A collection of catalogued resources",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 50
+      }
+    }
+  },
+  "required": [
+    "cataloguedResource"
+  ],
+  "unevaluatedProperties": false
+}

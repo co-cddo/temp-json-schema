@@ -6,7 +6,12 @@
   "type": "object",
   "$ref": "./../schema/catalogued_resource_schema.json",
   "properties": {
-    "cataloguedResource": {
+    "endpointDescription": {
+      "description": "A description of the services available via the end-points, including their operations, parameters etc.",
+      "type": "string",
+      "maxLength": 250
+    },
+    "relatedResource": {
       "description": "A collection of catalogued resources",
       "type": "array",
       "items": {

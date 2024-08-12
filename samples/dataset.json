@@ -29,7 +29,7 @@
   "distribution": [
     {
       "downloadURL": "http://example.com/path/to/file.csv",
-      "format":["CSV"]
+      "mediaType":["text/csv"]
     }
   ],
   "accessService": ["8d085327-21b6-4d8b-9705-88faad231d23"]

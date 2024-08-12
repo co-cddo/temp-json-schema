@@ -6,44 +6,66 @@
   "type": "object",
   "$ref": "./../schema/catalogued_resource_schema.json",
   "properties": {
-    "accessService": {
-      "description": "A reference to the service that provided the data",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "maxLength": 50
-      }
-    },
     "distribution": {
       "description": "A collection of distributions",
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
+          "accessService": {
+            "description": "A reference to the service that provided the data",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 50
+            }
+          },
           "downloadURL": {
             "description": "The location from which the Dataset can be downloaded",
             "type": "string",
             "maxLength": 250
           },
-          "format": {
-            "description": "Uncontrolled terms (words or phrases) assigned to describe an information resource.",
+          "mediaType": {
+            "description": "The IANA media type, or file format, type, or extention, of the distribution file.",
             "type": "array",
             "items": {
               "type": "string",
-              "enum": [
-                "CSV",
-                "XML",
-                "XSLX",
-                "Geopackage"
-              ]
+              "maxLength": 100
             }
           }
         },
         "required": [
           "downloadURL",
-          "format"
+          "mediaType"
         ]
       }
+    },
+    "issued": {
+      "description": "The date the data was issued.",
+      "$ref": "./../schema/shared_schema.json#/schemas/dateOrDateTime"
+    },
+    "updateFrequency": {
+      "description": "",
+      "type": "string",
+      "enum": [
+        "freq:triennial",
+        "freq:biennial",
+        "freq:annual",
+        "freq:semiannual",
+        "freq:threeTimesAYear",
+        "freq:quarterly",
+        "freq:bimonthly",
+        "freq:monthly",
+        "freq:semimonthly",
+        "freq:biweekly",
+        "freq:threeTimesAMonth",
+        "freq:weekly",
+        "freq:semiweekly",
+        "freq:threeTimesAWeek",
+        "freq:daily",
+        "freq:continuous",
+        "freq:irregular"
+      ]
     }
   },
   "unevaluatedProperties": false

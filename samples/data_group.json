@@ -4,10 +4,8 @@
   "lifecycleState": "Published",
   "title": "Annual exam results",
   "description": "A group of datasets, where each set represents the examination results for a particular year",
-  "type": [
-    "Data Group"
-  ],
-  "contentTheme": [
+  "type": "Data Group",
+  "theme": [
     "Education"
   ],
   "keyword": [

@@ -120,16 +120,13 @@
     },
     "type": {
       "description": "Topic: A controlled term that expresses the broad topical content of an information resource. Subject: A controlled term that expresses a topic of the intellectual content of an information resource.",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "Data Set",
-          "Data Service",
-          "Data Group",
-          "Data Share"
-        ]
-      }
+      "type": "string",
+      "enum": [
+        "Data Set",
+        "Data Service",
+        "Data Group",
+        "Data Share"
+      ]
     }
   },
   "unevaluatedProperties": false

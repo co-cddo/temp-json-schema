@@ -1,7 +1,7 @@
 {
   "identifier": "82537b280-dc0f-43d6-aa77-f27fc6e68d93",
   "modified": "2023-11-09T16:09:53+00:00",
-  "lifecycleState": "Published",
+  "status": "Published",
   "title": "Annual exam results",
   "description": "A group of datasets, where each set represents the examination results for a particular year",
   "type": "Data Group",

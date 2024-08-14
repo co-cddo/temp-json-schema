@@ -35,7 +35,6 @@
           }
         },
         "required": [
-          "downloadURL",
           "mediaType"
         ]
       }
@@ -45,27 +44,8 @@
       "$ref": "./../schema/shared_schema.json#/schemas/dateOrDateTime"
     },
     "updateFrequency": {
-      "description": "",
-      "type": "string",
-      "enum": [
-        "freq:triennial",
-        "freq:biennial",
-        "freq:annual",
-        "freq:semiannual",
-        "freq:threeTimesAYear",
-        "freq:quarterly",
-        "freq:bimonthly",
-        "freq:monthly",
-        "freq:semimonthly",
-        "freq:biweekly",
-        "freq:threeTimesAMonth",
-        "freq:weekly",
-        "freq:semiweekly",
-        "freq:threeTimesAWeek",
-        "freq:daily",
-        "freq:continuous",
-        "freq:irregular"
-      ]
+      "description": "The schedule for how often the data is updated",
+      "type": "string"
     }
   },
   "unevaluatedProperties": false

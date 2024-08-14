@@ -39,14 +39,15 @@
         "email"
       ]
     },
-    "modified": {
-      "description": "The date on which the data was created or last updated.",
-      "$ref": "./../schema/shared_schema.json#/schemas/dateOrDateTime"
-    },
     "description": {
       "description": "A concise narrative of the content of an catalogued resource.",
       "type": "string",
       "maxLength": 4096
+    },
+    "identifier": {
+      "description": "A unique number, code, or reference value assigned to a catalogued resource within the catalogue.",
+      "type": "string",
+      "maxLength": 50
     },
     "keyword": {
       "description": "Uncontrolled terms (words or phrases) assigned to describe an information resource.",
@@ -56,15 +57,14 @@
         "maxLength": 75
       }
     },
+    "modified": {
+      "description": "The date on which the data was created or last updated.",
+      "$ref": "./../schema/shared_schema.json#/schemas/dateOrDateTime"
+    },
     "publisher": {
       "description": "The entity responsible for making the catalogued resource publicly available.",
       "type": "string",
       "maxLength": 75
-    },
-    "identifier": {
-      "description": "A unique number, code, or reference value assigned to a catalogued resource within the catalogue.",
-      "type": "string",
-      "maxLength": 50
     },
     "securityClassification": {
       "description": "An information security designation that identifies the minimum level of protection assigned to an information resource.",
@@ -129,5 +129,20 @@
       ]
     }
   },
+  "required": [
+    "accessRights",
+    "contactPoint",
+    "description",
+    "identifier",
+    "keyword",
+    "modified",
+    "publisher",
+    "securityClassification",
+    "status",
+    "supplierIdentifier",
+    "theme",
+    "title",
+    "type"
+  ],
   "unevaluatedProperties": false
 }

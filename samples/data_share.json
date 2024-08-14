@@ -1,7 +1,7 @@
 {
   "identifier": "93b3e467-96bd-4417-9022-c4f88b57368f",
   "modified": "2024-12-01T16:09:53+00:00",
-  "lifecycleState": "Published",
+  "status": "Published",
   "title": "Request to access Advance Passenger Information",
   "description": "DfE's travel team wish to access Travel data and personal data given to airlines by passenger.",
   "type": "Data Share",
